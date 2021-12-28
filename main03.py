@@ -10,6 +10,9 @@ line_list = my_file.readlines()
 # 리스트 내부의 요소들을 반복으로 뽑아내서 출력해보자
 # for문의 정석 방법
 for line in line_list:
+    
+    # 읽어온 한 줄의 \n은 제거하자
+    line = line.strip()   # 마지막의 \n 제거한 새로운 str을 리턴하는 기능
     print(line)
     
 my_file.close()
