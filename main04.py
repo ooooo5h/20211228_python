@@ -12,8 +12,11 @@ with open('student_list.txt', 'a') as my_file:    # a : 추가 작성이지만, 
     address = input('거주지 : ')
     
     # 파일에 한 줄의 문구로 추가 = 이름, 년도, 거주지 한 줄로 가공해서 파일에 추가하고싶다
-    input_line = f'{name}, {birth_year}, {address}'
+    input_line = f'{name}, {birth_year}, {address}\n'    # 한명을 추가하고, 다음 줄로 내려주게끔 개행문자 추가
     print(input_line)
+    
+    # my_file변수를 이용해, 만들어진 한 줄을 추가해보자
+    my_file.write(input_line)    # 줄바꿈을 자동 지원 하지 않음
     
 # with 구문이 끝남
 # 여기가 실행된다 : my_file은 자동으로 close되어있는 상태
