@@ -1,7 +1,6 @@
-my_file = open('내파일.txt', 'a')   # w : write 모드로 파일 열기
+my_file = open('test/내파일.txt', 'w')   # w : write 모드로 파일 열기
 
 # 주석 추가 -> 코드의 변경사항 발생
-my_file.write('원주 까치둥지 짱 맛있지\n')
-my_file.write('언니랑 꼭 같이가서 또 재밌게 놀다와야지\n')
+my_file.write('찰옥수수 아이스크림 땡기네\n 폴더 내에 내 파일 추가')
 
 my_file.close()
